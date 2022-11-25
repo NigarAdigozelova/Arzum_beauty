@@ -1,0 +1,70 @@
+.promation{
+    position: relative;
+    padding: 16px 0;
+    &_img{
+        img{
+            width: 100%;
+        }
+    }
+    .spans{
+        display: flex;
+        justify-content: space-between;
+        // width: 100px;
+        .left_button{
+            position: absolute;
+            top: 50%;
+            left: -20px;
+            transform: rotate(90deg);
+            background-color: #fff;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            text-align: center;
+            padding: 9px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            svg{
+                width: 10px;
+                height: 10px;
+            }
+        }
+        .right_button{
+            position: absolute;
+            top: 50%;
+            right:-20px;
+            transform: rotate(-90deg);
+            background-color: #fff;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            text-align: center;
+            padding: 9px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    }
+    .circles{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+        span:first-child{
+            padding: 5px;
+            border-radius: 50%;
+            background-color: #E0E0E0;
+            
+        }
+        span:last-child{
+            padding: 5px;
+            border-radius: 50%;
+            background-color: #E0E0E0;
+            
+        }
+        span:nth-child(2){
+            padding: 5px;
+            border-radius: 50%;
+            background-color: #828282;
+            
+        }
+    }
+}

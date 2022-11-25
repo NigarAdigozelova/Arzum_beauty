@@ -3,7 +3,7 @@ header {
     flex-direction: column;
 
     .header--top {
-        padding: 16px 115px;
+        // padding: 16px 115px;
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -78,8 +78,9 @@ header {
 }
 
 .header--bottom {
-    padding: 16px 115px;
+    padding: 16px 0;
     background-color: #1D2123;
+    width: 100%;
 
     ul {
         display: flex;
@@ -93,14 +94,6 @@ header {
                 text-decoration: none;
                 color: white;
             }
-        }
-    }
-}
-.promation{
-    padding: 16px 115px;
-    &_img{
-        img{
-            width: 100%;
         }
     }
 }

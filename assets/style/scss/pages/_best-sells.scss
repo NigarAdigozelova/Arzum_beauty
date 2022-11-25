@@ -1,0 +1,53 @@
+.best-sells {
+    background-color: #e5e5e5;
+
+    &_head {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .card_wrapper {
+        .card {
+            
+            background-color: #fff;
+            
+
+            &-image {
+                .card-svg{
+                    display: flex;
+                    gap: 60%;
+                    .add-svg{display: flex;
+                        flex-direction: column;
+                    }
+                    span{
+                        width: 30px;
+                        height:30px;
+                        border-radius: 50%;
+                        border: 1px solid lightgray;
+                        padding: 2%;
+                        text-align: center;
+                        svg{
+                            left: 50%;
+                            top: 50%;
+                            transform: translateX(-4%);
+                                                }
+                    }
+                    
+                    
+                }
+
+                img{
+                    margin: 0 19%;
+                }
+            }
+            article{
+                .stars{
+                    display: flex;
+                }
+                .price{
+                    display: flex;
+                }
+            }
+        }
+    }
+}
