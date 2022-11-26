@@ -1,0 +1,14 @@
+.advertisement-second {
+    background-color: #e5e5e540;
+
+    &_wrapper {
+        .card-adver--second {
+            
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

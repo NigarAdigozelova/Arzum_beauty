@@ -1,0 +1,43 @@
+.sponsors{
+    background-color: #e5e5e540;
+
+    &_wrapper{
+        display: flex;
+        margin: 30px 0;
+
+        .card-sponsors{
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+            img{
+                width: 100%;
+
+            }
+        }
+    }
+    .circles{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+        span:first-child{
+            padding: 5px;
+            border-radius: 50%;
+            background-color: #E0E0E0;
+            
+        }
+        span:last-child{
+            padding: 5px;
+            border-radius: 50%;
+            background-color: #E0E0E0;
+            
+        }
+        span:nth-child(2){
+            padding: 5px;
+            border-radius: 50%;
+            background-color: #828282;
+            
+        }
+    }
+}

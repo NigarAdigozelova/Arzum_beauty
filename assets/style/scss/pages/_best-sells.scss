@@ -1,51 +1,81 @@
 .best-sells {
-    background-color: #e5e5e5;
+    background-color: #e5e5e540;
+
 
     &_head {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        margin: 20px 17px;
+
     }
+
     .card_wrapper {
+        display: flex;
+        margin-top: 40px;
+        width: 100%;
+
         .card {
-            
+            width: 100%;
             background-color: #fff;
-            
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
 
             &-image {
-                .card-svg{
+                .card-svg {
                     display: flex;
-                    gap: 60%;
-                    .add-svg{display: flex;
+                    justify-content: space-between;
+
+                    .add-svg {
+                        display: flex;
                         flex-direction: column;
+                        gap: 3px;
+                        margin: 7px;
+                        z-index: 999;
                     }
-                    span{
-                        width: 30px;
-                        height:30px;
+
+                    span {
+                        display: flex;
+                        width: 33px;
+                        height: 33px;
                         border-radius: 50%;
                         border: 1px solid lightgray;
                         padding: 2%;
+                        margin: 2%;
                         text-align: center;
-                        svg{
-                            left: 50%;
-                            top: 50%;
-                            transform: translateX(-4%);
-                                                }
+
+                        svg {
+                            justify-content: center;
+                            align-items: center;
+                        }
                     }
-                    
-                    
+
+
                 }
 
-                img{
-                    margin: 0 19%;
+                img {
+                    width: 150px;
+                    margin: -27px 24%;
                 }
             }
-            article{
-                .stars{
+
+            article {
+                margin: 15px;
+
+                .stars {
                     display: flex;
+                    gap: 15px;
+                    padding: 10px 0;
                 }
-                .price{
+
+                .price {
+                    padding: 10px 0;
                     display: flex;
+
+                    h3 {
+                        color: #ED008C;
+
+                    }
                 }
             }
         }
