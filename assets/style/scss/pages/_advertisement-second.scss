@@ -1,13 +1,14 @@
 .advertisement-second {
     background-color: #e5e5e540;
-
     &_wrapper {
+        height: 215px;
         .card-adver--second {
-            
+            // height: 215px;
+            width: 100%;
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-
             img {
                 width: 100%;
+
             }
         }
     }

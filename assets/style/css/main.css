@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
@@ -73,10 +74,18 @@
     width: 50%;
     padding: 0 16px;
   }
+  .col-md-4 {
+    width: 33.3333333333%;
+    padding: 0 16px;
+  }
 }
 @media only screen and (max-width: 576px) {
   .col-sm-12 {
     width: 100%;
+    padding: 0 16px;
+  }
+  .col-sm-6 {
+    width: 50%;
     padding: 0 16px;
   }
 }
@@ -154,6 +163,9 @@ header .header--top {
   text-decoration: none;
   color: white;
 }
+.header--bottom ul li a:hover {
+  color: hotpink;
+}
 
 .promation {
   position: relative;
@@ -221,6 +233,7 @@ header .header--top {
 
 .best-sells {
   background-color: rgba(229, 229, 229, 0.2509803922);
+  z-index: 99999;
 }
 .best-sells_head {
   display: flex;
@@ -232,9 +245,21 @@ header .header--top {
   display: flex;
   margin-top: 40px;
   width: 100%;
+  overflow-x: scroll;
+  gap: 10px;
+}
+.best-sells .card_wrapper .vector {
+  transform: rotate(270deg);
+  position: absolute;
+  right: 7%;
+  top: 140%;
+}
+.best-sells .card_wrapper .vector svg {
+  width: 30px;
+  height: 30px;
 }
 .best-sells .card_wrapper .card {
-  width: 100%;
+  width: 250px;
   background-color: #fff;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -247,6 +272,10 @@ header .header--top {
   flex-direction: column;
   gap: 3px;
   margin: 7px;
+  z-index: 999;
+}
+.best-sells .card_wrapper .card-image .card-svg .add-img1 {
+  padding-top: 55px;
   z-index: 999;
 }
 .best-sells .card_wrapper .card-image .card-svg span {
@@ -264,7 +293,6 @@ header .header--top {
   align-items: center;
 }
 .best-sells .card_wrapper .card-image img {
-  width: 150px;
   margin: -27px 24%;
 }
 .best-sells .card_wrapper .card article {
@@ -281,6 +309,10 @@ header .header--top {
 }
 .best-sells .card_wrapper .card article .price h3 {
   color: #ED008C;
+}
+
+.card_wrapper::-webkit-scrollbar {
+  display: none;
 }
 
 .advertisement {
@@ -300,7 +332,11 @@ header .header--top {
 .advertisement-second {
   background-color: rgba(229, 229, 229, 0.2509803922);
 }
+.advertisement-second_wrapper {
+  height: 215px;
+}
 .advertisement-second_wrapper .card-adver--second {
+  width: 100%;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .advertisement-second_wrapper .card-adver--second img {
@@ -312,9 +348,10 @@ header .header--top {
 }
 .sponsors_wrapper {
   display: flex;
-  margin: 30px 0;
+  margin: 120px 0 0 0;
 }
 .sponsors_wrapper .card-sponsors {
+  width: 100%;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .sponsors_wrapper .card-sponsors img {
@@ -325,7 +362,7 @@ header .header--top {
   flex-direction: row;
   justify-content: center;
   gap: 20px;
-  padding: 20px;
+  padding: 50px;
 }
 .sponsors .circles span:first-child {
   padding: 5px;
@@ -375,4 +412,54 @@ header .header--top {
   background-color: black;
   color: white;
   margin-left: 8px;
+}
+
+.footer {
+  background-color: #131515;
+}
+.footer_wrapper {
+  display: flex;
+  padding: 50px 0;
+}
+.footer_wrapper .list h6 {
+  color: #ffffff;
+  padding: 18px 0;
+  font-size: 13px;
+}
+.footer_wrapper .list ul li {
+  list-style-type: none;
+}
+.footer_wrapper .list ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 13px;
+  padding: 20px 0;
+}
+.footer_wrapper .list #social-media {
+  padding: 10px 0;
+  display: flex;
+}
+.footer_wrapper .list #social-media li {
+  padding: 0 10px 0 0;
+}
+.footer_last {
+  padding: 25px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.footer_last .company_name h5 {
+  color: #ffffff;
+  font-size: 13px;
+}
+.footer_last .security {
+  display: flex;
+  gap: 15px;
+}
+.footer_last .security .policy h5 {
+  color: #ffffff;
+  font-size: 13px;
+}
+.footer_last .security .privacy h5 {
+  color: #ffffff;
+  font-size: 13px;
 }/*# sourceMappingURL=main.css.map */

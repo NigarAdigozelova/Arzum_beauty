@@ -10,16 +10,11 @@ header {
         justify-content: space-between;
     }
 }
-
 .search {
     display: flex;
     width: 40%;
     align-items: center;
     justify-content: center;
-    
-
-
-
     .input {
         display: flex;
         width: 95%;
@@ -66,12 +61,14 @@ header {
         li {
             list-style-type: none;
             margin: 0 12px;
+            
 
 
 
         }
 
     }
+    
     .count{
         margin-left: 11%;
     }
@@ -88,12 +85,17 @@ header {
 
         li {
             list-style-type: none;
-
+            
 
             a {
                 text-decoration: none;
                 color: white;
+                &:hover{
+                    color: hotpink;
+                }
+               
             }
+            
         }
     }
 }
